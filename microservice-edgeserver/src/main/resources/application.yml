@@ -1,0 +1,16 @@
+## YAML Template.
+---
+zuul:
+    routes:
+        customers:
+            path: /producto/**
+            serviceId: microservice-productoClient
+            stripPrefix: false
+            
+eureka:
+    client:
+        registerWithEureka: false
+        serviceUrl:
+            defaultZone: http://localhost:1111/eureka/
+            
+port: 8080

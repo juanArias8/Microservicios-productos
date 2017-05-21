@@ -1,0 +1,18 @@
+## YAML Template.
+---
+spring:
+    application:
+        name: microservice-productobackend
+    freemarker:
+        enable: false
+    thymeleaf:
+        cache: false
+        prefix: classpath:/templates/
+        
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:1111/eureka/
+            
+server:
+    port: 2222
